@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
 </head>
 <body>
-    <main>
+    <main class="main-login">
         <section class="login-img">
-            <figure>
-                <img src="/assets/img/14562381_5500659.svg" alt="ilustração de uma mulher com chave na mão">
-            </figure>
+            <img src="/assets/img/gerenciador.png" alt="logo do sistema">
         </section>
         <section class="login-form">
             <form action="/login" method="POST">
-                <label for="username">Cadastro:</label>
+                <label for="username">Número de Cadastro:</label>
                 <input type="text" id="username" name="username" required>
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required>
