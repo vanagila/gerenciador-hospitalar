@@ -84,6 +84,7 @@
     font-size: 1.6rem;
     padding: 1rem;
     min-width: 156px;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
