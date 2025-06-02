@@ -1,0 +1,35 @@
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    /* blue */
+    --primary-blue: #2F80ED;
+
+    /* warning */
+    --primary-red: #FF0000;
+
+    /* success */
+    --primary-green: #198754;
+
+    /* text */
+    --primary-text: #333333;
+    --secondary-text: #FFFFFF;
+    --titles-color: #000000;
+    --input-border: #D9D9D9;
+}
+
+button {
+    cursor: pointer;
+}

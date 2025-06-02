@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/admin-dashboard.css">
+    <title>Painel do Administrador</title>
+</head>
+<body>
+    <header class="header-dashboard">
+        <img src="/assets/img/gerenciador.png" alt="Logo do Sistema" srcset="">
+        <h1>Gerenciador Hospitalar</h1>
+        <div>
+            <a href="../../index.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <nav class="main-nav"> 
+            <ul>
+                <li>
+                    <i class="fa-solid fa-user-injured"></i>
+                    <a href="">Pacientes</a>
+                    <span>324</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <a href="">Médicos</a>
+                    <span>12</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="">Consultas</a>
+                    <span>5</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-nurse"></i>
+                    <a href="">Enfermeiros</a>
+                    <span>8</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-nurse"></i>
+                    <a href="">Tec. de<br>Enfermagem</a>
+                    <span>10</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-users"></i>
+                    <a href="">Usuários</a>
+                    <span>50</span>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="consultas-container">
+                <div class="consultas-title-bar">
+                    <h2>Consultas Agendadas</h2>
+                    <button>+</button>
+                </div>
+                
+                <div class="consultas-header">
+                    <span>Data</span>
+                    <span>Paciente</span>
+                    <span>Médico</span>
+                    <span>Ações</span>
+                </div>
+
+                <div class="consultas-item">
+                    <span>03/05/2025 16:30</span>
+                    <span>João Silva</span>
+                    <span>Dr. José Paiva<br>Ortopedia</span>
+                    <div class="acoes">
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

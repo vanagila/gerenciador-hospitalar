@@ -1,0 +1,170 @@
+.main-header {
+    background: #fff;
+    color: var(--primary-text);
+    padding: 2.4rem 1.2rem 1.6rem 1.2rem;
+    box-shadow: 0 2px 12px rgba(47,128,237,0.08);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.header-content {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.main-header h2 {
+    font-size: 1.4rem;
+    color: var(--primary-text);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.main-header p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.main-home h2 {
+    font-size: 3.2rem;
+    color: var(--titles-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-grid ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.menu-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-grid i {
+    font-size: 4rem;
+    color: var(--titles-color);
+    padding-top: 1.5rem;
+}
+
+.btn-home {
+    background-color: var(--primary-blue);
+    color: var(--secondary-text);
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 1rem;
+    min-width: 156px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .main-header h1 {
+        font-size: 3.2rem;
+    }
+
+    .main-header h2 {
+        font-size: 2rem;
+    }
+
+    .main-header p {
+        font-size: 1.5rem;
+    }
+
+    .menu-grid {
+        gap: 2.5rem;
+    }
+
+    .menu-grid ul {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .menu-grid li {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .menu-grid i {
+        font-size: 4.2rem;
+        padding-top: 0;
+        margin-right: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-content {
+        max-width: 1000px;
+    }
+
+    .main-header {
+        padding: 4rem 0 2.5rem 0;
+        border-bottom-left-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+    }
+
+    .main-header h1 {
+        font-size: 4rem;
+    }
+
+    .main-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .main-header p {
+        font-size: 1.8rem;
+    }
+
+    .menu-grid {
+        gap: 4rem;
+    }
+
+    .menu-grid ul {
+        gap: 5rem;
+    }
+
+    .menu-grid i {
+        font-size: 5rem;
+    }
+
+    .btn-home {
+        font-size: 2rem;
+        min-width: 200px;
+        padding: 1.2rem 2rem;
+    }
+}
