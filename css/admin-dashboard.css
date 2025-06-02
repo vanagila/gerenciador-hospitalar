@@ -23,6 +23,7 @@
 .header-dashboard i {
     font-size: 2rem;
     color: var(--primary-blue);
+    background: none;
 }
 
 .main-nav ul {
