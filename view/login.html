@@ -15,7 +15,7 @@
             <img src="/assets/img/gerenciador.png" alt="logo do sistema">
         </section>
         <section class="login-form">
-            <form action="/login" method="POST">
+            <form id="login-form">
                 <label for="username">Número de Cadastro:</label>
                 <input type="text" id="username" name="username" required>
                 <label for="password">Senha:</label>
@@ -24,5 +24,20 @@
             </form>
         </section>
     </main>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(ev) {
+            ev.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "123") {
+                window.location.href = "/view/dashboard/adm-dashboard.html"
+            } else {
+                alert("Dados incorretos");
+            }
+        })
+    </script>
 </body>
 </html>
