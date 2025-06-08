@@ -22,34 +22,38 @@
         </div>
     </header>
     <main>
-        <nav class="main-nav"> 
+        <nav class="main-nav">
             <ul>
-                <li>
+                <li class="main-nav-item">
                     <i class="fa-solid fa-user-injured"></i>
                     <a href="">Pacientes</a>
                     <span>324</span>
                 </li>
-                <li>
+                <li class="main-nav-item">
                     <i class="fa-solid fa-user-doctor"></i>
                     <a href="">Médicos</a>
                     <span>12</span>
                 </li>
-                <li>
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <a href="">Consultas</a>
-                    <span>5</span>
+                <li class="main-nav-item">
+                    <button type="button" id="btn-consultas">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </button>
+                    <span>
+                        Consultas
+                    </span>
+                    <strong>5</strong>
                 </li>
-                <li>
+                <li class="main-nav-item">
                     <i class="fa-solid fa-user-nurse"></i>
                     <a href="">Enfermeiros</a>
                     <span>8</span>
                 </li>
-                <li>
+                <li class="main-nav-item">
                     <i class="fa-solid fa-user-nurse"></i>
                     <a href="">Tec. de<br>Enfermagem</a>
                     <span>10</span>
                 </li>
-                <li>
+                <li class="main-nav-item">
                     <i class="fa-solid fa-users"></i>
                     <a href="">Usuários</a>
                     <span>50</span>
@@ -63,25 +67,31 @@
                     <h2>Consultas Agendadas</h2>
                     <a href="/view/cadastros/cadastro-paciente.html">+</a>
                 </div>
-                
-                <div class="consultas-header">
-                    <span>Data</span>
-                    <span>Paciente</span>
-                    <span>Médico</span>
-                    <span>Ações</span>
-                </div>
 
-                <div class="consultas-item">
-                    <span>03/05/2025 16:30</span>
+                <ul class="consultas-header">
+                    <li>Data</li>
+                    <li>Paciente</li>
+                    <li>Médico</li>
+                    <li>Ações</li>
+                </ul>
+
+                <ul class="consultas-list">
+                    <!-- <span>03/05/2025<br>16:30</span>
                     <span>João Silva</span>
                     <span>Dr. José Paiva<br>Ortopedia</span>
                     <div class="acoes">
-                        <button class="btn-editar">Editar</button>
-                        <button class="btn-cancelar">Cancelar</button>
-                    </div>
-                </div>
+                        <button class="btn-editar">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn-cancelar">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div> -->
+                </ul>
             </div>
         </section>
     </main>
+
+    <script type="module" src="../../script/index.js"></script>
 </body>
 </html>
