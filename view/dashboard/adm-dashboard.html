@@ -30,9 +30,13 @@
                     <span>324</span>
                 </li>
                 <li class="main-nav-item">
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <a href="">Médicos</a>
-                    <span>12</span>
+                    <button type="button" id="btn-doctors">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </button>
+                    <span>
+                        Médicos
+                    </span>
+                    <strong>5</strong>
                 </li>
                 <li class="main-nav-item">
                     <button type="button" id="btn-consultas">
@@ -62,7 +66,7 @@
         </nav>
 
         <section>
-            <div class="consultas-container">
+            <!-- <div class="consultas-container">
                 <div class="consultas-title-bar">
                     <h2>Consultas Agendadas</h2>
                     <a href="/view/cadastros/cadastro-paciente.html">+</a>
@@ -76,17 +80,33 @@
                 </ul>
 
                 <ul class="consultas-list">
-                    <!-- <span>03/05/2025<br>16:30</span>
-                    <span>João Silva</span>
-                    <span>Dr. José Paiva<br>Ortopedia</span>
-                    <div class="acoes">
-                        <button class="btn-editar">
-                            <i class="fa-solid fa-pencil"></i>
-                        </button>
-                        <button class="btn-cancelar">
-                            <i class="fa-solid fa-trash"></i>
-                        </button>
-                    </div> -->
+                </ul>
+            </div> -->
+
+            <div class="listagem-container">
+                <div class="listagem-title-bar">
+                    <h2 class="listagem-title">Médicos</h2>
+                    <a href="/view/cadastros/cadastro-paciente.html">+</a>
+                </div>
+
+                <ul class="listagem-header">
+                    <li>Nome</li>
+                    <li>Especialidade</li>
+                    <li>CRM</li>
+                    <li>Ações</li>
+                </ul>
+
+                <ul class="listagem-list">
+                    <!-- <li class="consultas-list-item">
+                        <span>Dr. João Silva</span>
+                        <span>Cardiologia</span>
+                        <span>CRM-SP-123456</span>
+                    </li>
+                    <li class="consultas-list-item">
+                        <span>Dra. Maria Oliveira</span>
+                        <span>Neurologia</span>
+                        <span>CRM-SP-234567</span>
+                    </li> -->
                 </ul>
             </div>
         </section>
