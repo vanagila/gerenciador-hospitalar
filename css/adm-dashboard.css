@@ -172,6 +172,19 @@
     color: var(--secondary-text);
 }
 
+.listagem-list {
+    transition: opacity 0.4s;
+    opacity: 1;
+}
+.listagem-list.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+.listagem-list.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 @media (min-width: 768px) {
     .acoes {
         flex-direction: row;

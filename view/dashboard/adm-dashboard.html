@@ -23,11 +23,13 @@
     </header>
     <main>
         <nav class="main-nav">
-            <ul>
+            <ul class="main-nav-list">
                 <li class="main-nav-item">
-                    <i class="fa-solid fa-user-injured"></i>
-                    <a href="">Pacientes</a>
-                    <span>324</span>
+                    <button type="button" id="btn-pacientes">
+                        <i class="fa-solid fa-user-injured"></i>
+                    </button>
+                    <span>Pacientes</span>
+                    <strong>324</strong>
                 </li>
                 <li class="main-nav-item">
                     <button type="button" id="btn-doctors">
@@ -48,19 +50,25 @@
                     <strong>5</strong>
                 </li>
                 <li class="main-nav-item">
-                    <i class="fa-solid fa-user-nurse"></i>
-                    <a href="">Enfermeiros</a>
-                    <span>8</span>
+                    <button type="button" id="btn-enfermeiros">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </button>
+                    <span>Enfermeiros</span>
+                    <strong>8</strong>
                 </li>
                 <li class="main-nav-item">
-                    <i class="fa-solid fa-user-nurse"></i>
-                    <a href="">Tec. de<br>Enfermagem</a>
-                    <span>10</span>
+                    <button type="button" id="btn-tecEnf">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </button>
+                    <span>Tec. de<br>Enfermagem</span>
+                    <strong>10</strong>
                 </li>
                 <li class="main-nav-item">
-                    <i class="fa-solid fa-users"></i>
-                    <a href="">Usuários</a>
-                    <span>50</span>
+                    <button type="button" id="btn-users">
+                        <i class="fa-solid fa-users"></i>
+                    </button>
+                    <span>Usuários</span>
+                    <stong>50</stong>
                 </li>
             </ul>
         </nav>
@@ -85,15 +93,15 @@
 
             <div class="listagem-container">
                 <div class="listagem-title-bar">
-                    <h2 class="listagem-title">Médicos</h2>
+                    <h2 class="listagem-title"></h2>
                     <a href="/view/cadastros/cadastro-paciente.html">+</a>
                 </div>
 
                 <ul class="listagem-header">
-                    <li>Nome</li>
+                    <!-- <li>Nome</li>
                     <li>Especialidade</li>
                     <li>CRM</li>
-                    <li>Ações</li>
+                    <li>Ações</li> -->
                 </ul>
 
                 <ul class="listagem-list">

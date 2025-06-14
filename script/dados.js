@@ -71,6 +71,14 @@ export const consultas = [
   }
 ];
 
+export const tituloConsultas = [ 
+  {
+    dataHora: "Data",
+    nome: "Paciente",
+    medico: "Médico"
+  }
+]
+
 export const medicos = [
   {
     nomeMedico: "Dr. João Pereira",
@@ -124,6 +132,14 @@ export const medicos = [
   }
 ];
 
+export const tituloMedicos = [ 
+  {
+    nome: "Nome",
+    especialidade: "Especialidade",
+    crm: "CRM"
+  }
+];
+
 export const enfermeiros = [
   {
     nome: "Enf. Patrícia Gomes",
@@ -142,6 +158,14 @@ export const enfermeiros = [
   }
 ];
 
+export const tituloEnfermeiros = [ 
+  {
+    nome: "Nome",
+    coren: "COREM",
+    turno: "Turno"
+  }
+]
+
 export const tecnicosEnfermagem = [
   {
     nome: "Tec. Marcos Silva",
@@ -158,4 +182,123 @@ export const tecnicosEnfermagem = [
     coren: "COREN-SP-667788",
     turno: "Noite"
   }
+];
+
+export const tituloTecEnfs = [ 
+  {
+    nome: "Nome",
+    coren: "COREM",
+    turno: "Turno"
+  }
+];
+
+export const pacientes = [
+  {
+    nome: "Ana Silva",
+    cpf: "123.456.789-00",
+    dataNascimento: "15/03/1985",
+    sexo: "Feminino"
+  },
+  {
+    nome: "Carlos Mendes",
+    cpf: "234.567.890-11",
+    dataNascimento: "22/07/1990",
+    sexo: "Masculino"
+  },
+  {
+    nome: "Fernanda Oliveira",
+    cpf: "345.678.901-22",
+    dataNascimento: "30/11/1995",
+    sexo: "Feminino"
+  },
+  {
+    nome: "Paulo Souza",
+    cpf: "456.789.012-33",
+    dataNascimento: "10/01/1980",
+    sexo: "Masculino"
+  },
+  {
+    nome: "Mariana Ferreira",
+    cpf: "567.890.123-44",
+    dataNascimento: "25/09/1988",
+    sexo: "Feminino"
+  },
+  {
+    nome: "José Almeida",
+    cpf: "678.901.234-55",
+    dataNascimento: "05/06/1975",
+    sexo: "Masculino"
+  },
+  {
+    nome: "Beatriz Ramos",
+    cpf: "789.012.345-66",
+    dataNascimento: "12/12/2000",
+    sexo: "Feminino"
+  },
+  {
+    nome: "Ricardo Martins",
+    cpf: "890.123.456-77",
+    dataNascimento: "03/04/1993",
+    sexo: "Masculino"
+  },
+  {
+    nome: "Luciana Carvalho",
+    cpf: "901.234.567-88",
+    dataNascimento: "19/08/1982",
+    sexo: "Feminino"
+  },
+  {
+    nome: "Fernando Rocha",
+    cpf: "012.345.678-99",
+    dataNascimento: "28/02/1979",
+    sexo: "Masculino"
+  }
+];
+
+export const tituloPacientes = [ 
+  {
+    nome: "Nome",
+    cpf: "CPF",
+    dataNascimento: "Data Nasc.",
+    sexo: "Sexo"
+  }
+]
+
+export const navItems = [
+  {
+    id: "btn-pacientes",
+    icon: "fa-user-injured",
+    label: "Pacientes",
+    get count() { return pacientes.length; }
+  },
+  {
+    id: "btn-doctors",
+    icon: "fa-user-doctor",
+    label: "Médicos",
+    get count() { return medicos.length; }
+  },
+  {
+    id: "btn-consultas",
+    icon: "fa-calendar-days",
+    label: "Consultas",
+    get count() { return consultas.length; }
+  },
+  {
+    id: "btn-enfermeiros",
+    icon: "fa-user-nurse",
+    label: "Enfermeiros",
+    get count() { return enfermeiros.length; }
+  },
+  {
+    id: "btn-tecEnf",
+    icon: "fa-user-nurse",
+    label: "Tec. de<br>Enfermagem",
+    get count() { return tecnicosEnfermagem.length; }
+  },
+  {
+    id: "btn-users",
+    icon: "fa-users",
+    label: "Usuários",
+    get count() { return pacientes.length + enfermeiros.length + tecnicosEnfermagem.length + pacientes.length ; }
+    }
 ];
