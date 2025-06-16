@@ -5,9 +5,6 @@ const nav = document.querySelector(".main-nav-list");
 const lista = document.querySelector(".listagem-list");
 const listagemTitle = document.querySelector(".listagem-title");
 
-// const itemsQty = document.createElement("strong");
-// itemsQty.textContent = consultas.length;
-// navElement.appendChild(itemsQty);
 
 function renderHeader(titulos) {
     const header = document.querySelector(".listagem-header");
@@ -240,27 +237,25 @@ function renderNav() {
         const strong = document.createElement("strong");
         strong.textContent = item.count;
 
-        li.appendChild(button);
-        li.appendChild(span);
-        li.appendChild(strong);
+        li.append(button, span, strong);
 
         nav.appendChild(li);
 
         switch (item.id) {
             case "btn-pacientes":
-                button.addEventListener("click", renderPacients)
+                li.addEventListener("click", renderPacients)
                 break;
             case "btn-doctors":
-                button.addEventListener("click", renderDoctors)
+                li.addEventListener("click", renderDoctors)
                 break;
             case "btn-consultas":
-                button.addEventListener("click", renderAppointments)
+                li.addEventListener("click", renderAppointments)
                 break;
             case "btn-enfermeiros":
-                button.addEventListener("click", renderNurses)
+                li.addEventListener("click", renderNurses)
                 break;
             case "btn-tecEnf":
-                button.addEventListener("click", renderNursingTech)
+                li.addEventListener("click", renderNursingTech)
                 break;
             case "btn-users":
                 break;
@@ -270,4 +265,3 @@ function renderNav() {
 
 renderNav();
 renderPacients();
-
