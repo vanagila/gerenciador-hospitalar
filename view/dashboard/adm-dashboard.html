@@ -22,66 +22,104 @@
         </div>
     </header>
     <main>
-        <nav class="main-nav"> 
-            <ul>
-                <li>
-                    <i class="fa-solid fa-user-injured"></i>
-                    <a href="">Pacientes</a>
-                    <span>324</span>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li class="main-nav-item">
+                    <button type="button" id="btn-pacientes">
+                        <i class="fa-solid fa-user-injured"></i>
+                        <span>Pacientes</span>
+                        <strong>324</strong>
+                    </button>S
                 </li>
-                <li>
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <a href="">Médicos</a>
-                    <span>12</span>
+                <li class="main-nav-item">
+                    <button type="button" id="btn-doctors">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </button>
+                    <span>
+                        Médicos
+                    </span>
+                    <strong>5</strong>
                 </li>
-                <li>
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <a href="">Consultas</a>
-                    <span>5</span>
+                <li class="main-nav-item">
+                    <button type="button" id="btn-consultas">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </button>
+                    <span>
+                        Consultas
+                    </span>
+                    <strong>5</strong>
                 </li>
-                <li>
-                    <i class="fa-solid fa-user-nurse"></i>
-                    <a href="">Enfermeiros</a>
-                    <span>8</span>
+                <li class="main-nav-item">
+                    <button type="button" id="btn-enfermeiros">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </button>
+                    <span>Enfermeiros</span>
+                    <strong>8</strong>
                 </li>
-                <li>
-                    <i class="fa-solid fa-user-nurse"></i>
-                    <a href="">Tec. de<br>Enfermagem</a>
-                    <span>10</span>
+                <li class="main-nav-item">
+                    <button type="button" id="btn-tecEnf">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </button>
+                    <span>Tec. de<br>Enfermagem</span>
+                    <strong>10</strong>
                 </li>
-                <li>
-                    <i class="fa-solid fa-users"></i>
-                    <a href="">Usuários</a>
-                    <span>50</span>
+                <li class="main-nav-item">
+                    <button type="button" id="btn-users">
+                        <i class="fa-solid fa-users"></i>
+                    </button>
+                    <span>Usuários</span>
+                    <stong>50</stong>
                 </li>
             </ul>
         </nav>
 
         <section>
-            <div class="consultas-container">
+            <!-- <div class="consultas-container">
                 <div class="consultas-title-bar">
                     <h2>Consultas Agendadas</h2>
                     <a href="/view/cadastros/cadastro-paciente.html">+</a>
                 </div>
-                
-                <div class="consultas-header">
-                    <span>Data</span>
-                    <span>Paciente</span>
-                    <span>Médico</span>
-                    <span>Ações</span>
+
+                <ul class="consultas-header">
+                    <li>Data</li>
+                    <li>Paciente</li>
+                    <li>Médico</li>
+                    <li>Ações</li>
+                </ul>
+
+                <ul class="consultas-list">
+                </ul>
+            </div> -->
+
+            <div class="listagem-container">
+                <div class="listagem-title-bar">
+                    <h2 class="listagem-title"></h2>
+                    <a href="/view/cadastros/cadastro-paciente.html">+</a>
                 </div>
 
-                <div class="consultas-item">
-                    <span>03/05/2025 16:30</span>
-                    <span>João Silva</span>
-                    <span>Dr. José Paiva<br>Ortopedia</span>
-                    <div class="acoes">
-                        <button class="btn-editar">Editar</button>
-                        <button class="btn-cancelar">Cancelar</button>
-                    </div>
-                </div>
+                <ul class="listagem-header">
+                    <!-- <li>Nome</li>
+                    <li>Especialidade</li>
+                    <li>CRM</li>
+                    <li>Ações</li> -->
+                </ul>
+
+                <ul class="listagem-list">
+                    <!-- <li class="consultas-list-item">
+                        <span>Dr. João Silva</span>
+                        <span>Cardiologia</span>
+                        <span>CRM-SP-123456</span>
+                    </li>
+                    <li class="consultas-list-item">
+                        <span>Dra. Maria Oliveira</span>
+                        <span>Neurologia</span>
+                        <span>CRM-SP-234567</span>
+                    </li> -->
+                </ul>
             </div>
         </section>
     </main>
+
+    <script type="module" src="../../script/index.js"></script>
 </body>
 </html>
