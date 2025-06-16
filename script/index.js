@@ -1,4 +1,4 @@
-import { consultas, medicos, enfermeiros, tecnicosEnfermagem, pacientes, tituloPacientes, tituloConsultas, tituloMedicos, tituloEnfermeiros, tituloTecEnfs, navItems } from "./dados.js"; 
+import { consultas, medicos, enfermeiros, tecnicosEnfermagem, pacientes, tituloPacientes, tituloConsultas, tituloMedicos, tituloEnfermeiros, tituloTecEnfs, navItems, permissionNav } from "./dados.js"; 
 
 const nav = document.querySelector(".main-nav-list");
 
@@ -216,9 +216,13 @@ function renderNursingTech() {
     })
 }
 
+const userType = "admin";
+
 function renderNav() {
     nav.innerHTML = "";
-    navItems.forEach(item => {
+
+    const permittedItems = navItems.filter(item => permissionNav[userType].includes(item.id));
+    permittedItems.forEach(item => {
         const li = document.createElement("li");
         li.classList.add("main-nav-item");
 

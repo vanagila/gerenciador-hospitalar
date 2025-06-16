@@ -299,6 +299,17 @@ export const navItems = [
     id: "btn-users",
     icon: "fa-users",
     label: "Usuários",
-    get count() { return pacientes.length + enfermeiros.length + tecnicosEnfermagem.length + pacientes.length ; }
+    get count() { return pacientes.length + enfermeiros.length + tecnicosEnfermagem.length; }
     }
 ];
+
+export const permissionNav = {
+    admin: ["btn-pacientes", "btn-doctors", "btn-consultas", "btn-enfermeiros", "btn-tecEnf", "btn-users"],
+    doctor: ["btn-consultas", "btn-pacientes"],
+    nurse: ["btn-consultas", "btn-pacientes"],
+    nursingTech: ["btn-consultas", "btn-pacientes"],
+};
+
+export const userType = [
+  "admin", "doctor", "nurse", "nursingTech"
+]
