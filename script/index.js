@@ -1,10 +1,8 @@
 import { consultas, medicos, enfermeiros, tecnicosEnfermagem, pacientes, tituloPacientes, tituloConsultas, tituloMedicos, tituloEnfermeiros, tituloTecEnfs, navItems, permissionNav } from "./dados.js"; 
 
 const nav = document.querySelector(".main-nav-list");
-
 const lista = document.querySelector(".listagem-list");
 const listagemTitle = document.querySelector(".listagem-title");
-
 
 function renderHeader(titulos) {
     const header = document.querySelector(".listagem-header");
