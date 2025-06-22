@@ -79,56 +79,81 @@ export const tituloConsultas = [
   }
 ]
 
-export const medicos = [
+const medicos = [
   {
-    nomeMedico: "Dr. João Pereira",
+    nome: "Dra. Mariana Ferreira",
+    cpf: "123.456.789-00",
+    nascimento: "15/03/1982",
+    sexo: "Feminino",
+    telefone: "(11) 91234-5678",
+    email: "mariana.ferreira@example.com",
+    endereco: "Av. Paulista, 1000 - São Paulo/SP",
+    crm: "CRM-SP-123456",
     especialidade: "Cardiologia",
-    crm: "CRM-SP-123456"
+    setor: "Ambulatório",
+    turno: "Manhã",
+    dataAdmissao: "2015-04-10",
+    status: "Ativo"
   },
   {
-    nomeMedico: "Dra. Mariana Costa",
-    especialidade: "Dermatologia",
-    crm: "CRM-SP-234567"
-  },
-  {
-    nomeMedico: "Dr. Ricardo Lima",
+    nome: "Dr. Ricardo Almeida",
+    cpf: "987.654.321-00",
+    nascimento: "20/11/1975",
+    sexo: "Masculino",
+    telefone: "(21) 99876-5432",
+    email: "ricardo.almeida@example.com",
+    endereco: "Rua das Laranjeiras, 45 - Rio de Janeiro/RJ",
+    crm: "CRM-RJ-654321",
     especialidade: "Ortopedia",
-    crm: "CRM-SP-345678"
+    setor: "Centro Cirúrgico",
+    turno: "Tarde",
+    dataAdmissao: "2012-08-01",
+    status: "Ativo"
   },
   {
-    nomeMedico: "Dra. Luciana Rocha",
-    especialidade: "Neurologia",
-    crm: "CRM-SP-456789"
-  },
-  {
-    nomeMedico: "Dr. Gustavo Azevedo",
-    especialidade: "Ginecologia",
-    crm: "CRM-SP-567890"
-  },
-  {
-    nomeMedico: "Dr. Fábio Teixeira",
-    especialidade: "Oftalmologia",
-    crm: "CRM-SP-678901"
-  },
-  {
-    nomeMedico: "Dra. Sandra Moura",
+    nome: "Dra. Beatriz Nunes",
+    cpf: "111.222.333-44",
+    nascimento: "01/07/1987",
+    sexo: "Feminino",
+    telefone: "(31) 93456-7890",
+    email: "beatriz.nunes@example.com",
+    endereco: "Av. Afonso Pena, 200 - Belo Horizonte/MG",
+    crm: "CRM-MG-998877",
     especialidade: "Pediatria",
-    crm: "CRM-SP-789012"
+    setor: "Pediatria",
+    turno: "Manhã",
+    dataAdmissao: "2019-02-14",
+    status: "Ativo"
   },
   {
-    nomeMedico: "Dr. Eduardo Barbosa",
-    especialidade: "Endocrinologia",
-    crm: "CRM-SP-890123"
+    nome: "Dr. João Batista",
+    cpf: "222.333.444-55",
+    nascimento: "10/01/1980",
+    sexo: "Masculino",
+    telefone: "(41) 98877-6655",
+    email: "joao.batista@example.com",
+    endereco: "Rua XV de Novembro, 123 - Curitiba/PR",
+    crm: "CRM-PR-445566",
+    especialidade: "Neurologia",
+    setor: "Internação",
+    turno: "Noite",
+    dataAdmissao: "2010-10-10",
+    status: "Ativo"
   },
   {
-    nomeMedico: "Dra. Renata Dias",
-    especialidade: "Psiquiatria",
-    crm: "CRM-SP-901234"
-  },
-  {
-    nomeMedico: "Dr. Henrique Souza",
-    especialidade: "Urologia",
-    crm: "CRM-SP-012345"
+    nome: "Dra. Camila Rocha",
+    cpf: "333.444.555-66",
+    nascimento: "22/09/1990",
+    sexo: "Feminino",
+    telefone: "(71) 99999-8888",
+    email: "camila.rocha@example.com",
+    endereco: "Rua das Flores, 78 - Salvador/BA",
+    crm: "CRM-BA-223344",
+    especialidade: "Dermatologia",
+    setor: "Ambulatório",
+    turno: "Tarde",
+    dataAdmissao: "2021-07-05",
+    status: "Ativo"
   }
 ];
 
@@ -140,21 +165,81 @@ export const tituloMedicos = [
   }
 ];
 
-export const enfermeiros = [
+const enfermeiros = [
   {
-    nome: "Enf. Patrícia Gomes",
-    coren: "COREN-SP-112233",
-    turno: "Manhã"
+    nome: "Patrícia Gomes",
+    cpf: "111.222.333-44",
+    nascimento: "12/06/1985",
+    sexo: "Feminino",
+    telefone: "(11) 91234-5678",
+    email: "patricia.gomes@example.com",
+    endereco: "Rua Santo André, 45 - São Paulo/SP",
+    funcao: "Enfermeira",
+    coren: "COREN-SP-123456",
+    turno: "Manhã",
+    setor: "UTI",
+    dataAdmissao: "2017-03-10",
+    status: "Ativo"
   },
   {
-    nome: "Enf. Roberto Alves",
-    coren: "COREN-SP-223344",
-    turno: "Tarde"
+    nome: "Bruno Moreira",
+    cpf: "222.333.444-55",
+    nascimento: "30/08/1978",
+    sexo: "Masculino",
+    telefone: "(21) 99876-5432",
+    email: "bruno.moreira@example.com",
+    endereco: "Av. Presidente Vargas, 200 - Rio de Janeiro/RJ",
+    funcao: "Enfermeiro",
+    coren: "COREN-RJ-654321",
+    turno: "Tarde",
+    setor: "Centro Cirúrgico",
+    dataAdmissao: "2012-06-01",
+    status: "Ativo"
   },
   {
-    nome: "Enf. Juliana Martins",
-    coren: "COREN-SP-334455",
-    turno: "Noite"
+    nome: "Juliana Pires",
+    cpf: "333.444.555-66",
+    nascimento: "01/03/1990",
+    sexo: "Feminino",
+    telefone: "(31) 93456-7890",
+    email: "juliana.pires@example.com",
+    endereco: "Av. dos Andradas, 150 - Belo Horizonte/MG",
+    funcao: "Enfermeira",
+    coren: "COREN-MG-998877",
+    turno: "Noite",
+    setor: "Internação",
+    dataAdmissao: "2019-11-12",
+    status: "Ativo"
+  },
+  {
+    nome: "Carlos Nunes",
+    cpf: "444.555.666-77",
+    nascimento: "05/04/1982",
+    sexo: "Masculino",
+    telefone: "(41) 98877-6655",
+    email: "carlos.nunes@example.com",
+    endereco: "Rua Marechal Deodoro, 123 - Curitiba/PR",
+    funcao: "Enfermeiro",
+    coren: "COREN-PR-445566",
+    turno: "Manhã",
+    setor: "Emergência",
+    dataAdmissao: "2010-08-20",
+    status: "Ativo"
+  },
+  {
+    nome: "Tainá Rocha",
+    cpf: "555.666.777-88",
+    nascimento: "20/11/1992",
+    sexo: "Feminino",
+    telefone: "(71) 99999-8888",
+    email: "taina.rocha@example.com",
+    endereco: "Rua das Palmeiras, 70 - Salvador/BA",
+    funcao: "Enfermeira",
+    coren: "COREN-BA-223344",
+    turno: "Tarde",
+    setor: "Pediatria",
+    dataAdmissao: "2021-05-15",
+    status: "Ativo"
   }
 ];
 
@@ -168,22 +253,87 @@ export const tituloEnfermeiros = [
 
 export const tecnicosEnfermagem = [
   {
-    nome: "Tec. Marcos Silva",
-    coren: "COREN-SP-445566",
-    turno: "Manhã"
-  },
-  {
-    nome: "Tec. Amanda Souza",
+    nome: "Amanda Souza",
+    cpf: "123.456.789-00",
+    nascimento: "10/05/1992",
+    sexo: "Feminino",
+    telefone: "(11) 91234-5678",
+    email: "amanda@example.com",
+    endereco: "Rua das Flores, 123 - São Paulo/SP",
+    funcao: "Técnico de Enfermagem",
     coren: "COREN-SP-556677",
-    turno: "Tarde"
+    turno: "Noite",
+    setor: "UTI",
+    supervisor: "Enf. Patrícia Gomes",
+    dataAdmissao: "2021-03-15",
+    status: "Ativo"
   },
   {
-    nome: "Tec. Felipe Rocha",
-    coren: "COREN-SP-667788",
-    turno: "Noite"
+    nome: "João Pereira",
+    cpf: "987.654.321-00",
+    nascimento: "23/07/1989",
+    sexo: "Masculino",
+    telefone: "(21) 99876-5432",
+    email: "joao.pereira@example.com",
+    endereco: "Av. Central, 200 - Rio de Janeiro/RJ",
+    funcao: "Técnico de Enfermagem",
+    coren: "COREN-RJ-442233",
+    turno: "Manhã",
+    setor: "Emergência",
+    supervisor: "Enf. Carlos Nunes",
+    dataAdmissao: "2019-11-01",
+    status: "Ativo"
+  },
+  {
+    nome: "Luciana Martins",
+    cpf: "111.222.333-44",
+    nascimento: "05/12/1995",
+    sexo: "Feminino",
+    telefone: "(31) 92345-6789",
+    email: "luciana.m@example.com",
+    endereco: "Rua Verde, 80 - Belo Horizonte/MG",
+    funcao: "Técnico de Enfermagem",
+    coren: "COREN-MG-778899",
+    turno: "Tarde",
+    setor: "Internação",
+    supervisor: "Enf. Juliana Pires",
+    dataAdmissao: "2020-08-10",
+    status: "Ativo"
+  },
+  {
+    nome: "Ricardo Lima",
+    cpf: "444.555.666-77",
+    nascimento: "15/02/1985",
+    sexo: "Masculino",
+    telefone: "(41) 93456-7890",
+    email: "ricardo.lima@example.com",
+    endereco: "Rua da Saúde, 99 - Curitiba/PR",
+    funcao: "Técnico de Enfermagem",
+    coren: "COREN-PR-334455",
+    turno: "Noite",
+    setor: "Centro Cirúrgico",
+    supervisor: "Enf. Bruno Moreira",
+    dataAdmissao: "2018-05-22",
+    status: "Ativo"
+  },
+  {
+    nome: "Fernanda Alves",
+    cpf: "777.888.999-00",
+    nascimento: "30/08/1990",
+    sexo: "Feminino",
+    telefone: "(71) 98765-4321",
+    email: "fernanda.alves@example.com",
+    endereco: "Travessa das Palmeiras, 45 - Salvador/BA",
+    funcao: "Técnico de Enfermagem",
+    coren: "COREN-BA-223344",
+    turno: "Manhã",
+    setor: "Pediatria",
+    supervisor: "Enf. Tainá Rocha",
+    dataAdmissao: "2022-01-10",
+    status: "Ativo"
   }
 ];
-
+  
 export const tituloTecEnfs = [ 
   {
     nome: "Nome",
@@ -192,66 +342,118 @@ export const tituloTecEnfs = [
   }
 ];
 
-export const pacientes = [
+const pacientes = [
   {
-    nome: "Ana Silva",
+    nome: "Laura Martins",
     cpf: "123.456.789-00",
-    dataNascimento: "15/03/1985",
-    sexo: "Feminino"
+    nascimento: "12/04/1990",
+    sexo: "Feminino",
+    telefone: "(11) 91234-5678",
+    email: "laura.martins@example.com",
+    endereco: "Rua São João, 123 - São Paulo/SP",
+    convenio: "Unimed",
+    numeroCarteira: "UM12345678",
   },
   {
-    nome: "Carlos Mendes",
-    cpf: "234.567.890-11",
-    dataNascimento: "22/07/1990",
-    sexo: "Masculino"
+    nome: "Felipe Souza",
+    cpf: "987.654.321-00",
+    nascimento: "25/06/1985",
+    sexo: "Masculino",
+    telefone: "(21) 99876-5432",
+    email: "felipe.souza@example.com",
+    endereco: "Av. Atlântica, 99 - Rio de Janeiro/RJ",
+    convenio: "Bradesco Saúde",
+    numeroCarteira: "BR99887766",
   },
   {
-    nome: "Fernanda Oliveira",
-    cpf: "345.678.901-22",
-    dataNascimento: "30/11/1995",
-    sexo: "Feminino"
+    nome: "Ana Paula Lima",
+    cpf: "111.222.333-44",
+    nascimento: "09/09/1975",
+    sexo: "Feminino",
+    telefone: "(31) 93456-7890",
+    email: "ana.lima@example.com",
+    endereco: "Rua das Acácias, 45 - Belo Horizonte/MG",
+    convenio: "Amil",
+    numeroCarteira: "AM55443322",
   },
   {
-    nome: "Paulo Souza",
-    cpf: "456.789.012-33",
-    dataNascimento: "10/01/1980",
-    sexo: "Masculino"
+    nome: "Carlos Eduardo Braga",
+    cpf: "222.333.444-55",
+    nascimento: "03/03/1992",
+    sexo: "Masculino",
+    telefone: "(85) 98888-7777",
+    email: "carlos.braga@example.com",
+    endereco: "Rua das Flores, 88 - Fortaleza/CE",
+    convenio: "Particular",
+    numeroCarteira: null,
   },
   {
-    nome: "Mariana Ferreira",
-    cpf: "567.890.123-44",
-    dataNascimento: "25/09/1988",
-    sexo: "Feminino"
+    nome: "Mariana Azevedo",
+    cpf: "333.444.555-66",
+    nascimento: "17/11/1988",
+    sexo: "Feminino",
+    telefone: "(41) 97777-6666",
+    email: "mariana.az@example.com",
+    endereco: "Av. Curitiba, 100 - Curitiba/PR",
+    convenio: "SulAmérica",
+    numeroCarteira: "SA10293847",
   },
   {
-    nome: "José Almeida",
-    cpf: "678.901.234-55",
-    dataNascimento: "05/06/1975",
-    sexo: "Masculino"
+    nome: "José Ricardo Alves",
+    cpf: "444.555.666-77",
+    nascimento: "20/08/1965",
+    sexo: "Masculino",
+    telefone: "(51) 97654-3210",
+    email: "jose.alves@example.com",
+    endereco: "Rua Porto Alegre, 15 - Porto Alegre/RS",
+    convenio: "Unimed",
+    numeroCarteira: "UM55667788",
+    status: "Inativo"
   },
   {
-    nome: "Beatriz Ramos",
-    cpf: "789.012.345-66",
-    dataNascimento: "12/12/2000",
-    sexo: "Feminino"
+    nome: "Juliana Torres",
+    cpf: "555.666.777-88",
+    nascimento: "05/05/1999",
+    sexo: "Feminino",
+    telefone: "(71) 99999-8888",
+    email: "juliana.torres@example.com",
+    endereco: "Rua da Bahia, 70 - Salvador/BA",
+    convenio: "Hapvida",
+    numeroCarteira: "HP12344321",
   },
   {
-    nome: "Ricardo Martins",
-    cpf: "890.123.456-77",
-    dataNascimento: "03/04/1993",
-    sexo: "Masculino"
+    nome: "Vinícius Andrade",
+    cpf: "666.777.888-99",
+    nascimento: "30/12/1990",
+    sexo: "Masculino",
+    telefone: "(62) 91111-2222",
+    email: "vinicius.andrade@example.com",
+    endereco: "Rua Goiás, 34 - Goiânia/GO",
+    convenio: "Particular",
+    numeroCarteira: null,
   },
   {
-    nome: "Luciana Carvalho",
-    cpf: "901.234.567-88",
-    dataNascimento: "19/08/1982",
-    sexo: "Feminino"
+    nome: "Renata Nogueira",
+    cpf: "777.888.999-00",
+    nascimento: "14/02/1983",
+    sexo: "Feminino",
+    telefone: "(95) 94444-3333",
+    email: "renata.nogueira@example.com",
+    endereco: "Rua das Palmeiras, 17 - Boa Vista/RR",
+    convenio: "Bradesco Saúde",
+    numeroCarteira: "BR77332211",
   },
   {
-    nome: "Fernando Rocha",
-    cpf: "012.345.678-99",
-    dataNascimento: "28/02/1979",
-    sexo: "Masculino"
+    nome: "André Luiz Silva",
+    cpf: "888.999.000-11",
+    nascimento: "22/07/1978",
+    sexo: "Masculino",
+    telefone: "(98) 98888-7777",
+    email: "andre.silva@example.com",
+    endereco: "Rua Maranhão, 123 - São Luís/MA",
+    convenio: "Amil",
+    numeroCarteira: "AM11992233",
+    status: "Inativo"
   }
 ];
 
@@ -263,6 +465,84 @@ export const tituloPacientes = [
     sexo: "Sexo"
   }
 ]
+
+export const recepcionistas = [
+  {
+    nome: "Carlos Ramos",
+    cpf: "987.654.321-00",
+    nascimento: "02/11/1985",
+    sexo: "Masculino",
+    telefone: "(11) 99876-5432",
+    email: "carlos@example.com",
+    endereco: "Av. Brasil, 45 - São Paulo/SP",
+    funcao: "Recepcionista",
+    unidade: "Recepção Central",
+    horario: "Manhã",
+    supervisor: "Ana Paula (Administração)",
+    dataAdmissao: "2020-07-01",
+    status: "Ativo"
+  },
+  {
+    nome: "Juliana Costa",
+    cpf: "321.654.987-00",
+    nascimento: "14/03/1991",
+    sexo: "Feminino",
+    telefone: "(21) 91234-5678",
+    email: "juliana.costa@example.com",
+    endereco: "Rua das Laranjeiras, 88 - Rio de Janeiro/RJ",
+    funcao: "Recepcionista",
+    unidade: "Clínica Geral",
+    horario: "Tarde",
+    supervisor: "Felipe Andrade",
+    dataAdmissao: "2021-02-18",
+    status: "Ativo"
+  },
+  {
+    nome: "Marcos Oliveira",
+    cpf: "654.123.789-11",
+    nascimento: "09/06/1980",
+    sexo: "Masculino",
+    telefone: "(31) 99876-1234",
+    email: "marcos.oliveira@example.com",
+    endereco: "Av. Amazonas, 120 - Belo Horizonte/MG",
+    funcao: "Recepcionista",
+    unidade: "Urgência e Emergência",
+    horario: "Noite",
+    supervisor: "Enf. Carla Lima",
+    dataAdmissao: "2017-09-10",
+    status: "Ativo"
+  },
+  {
+    nome: "Patrícia Mendes",
+    cpf: "555.666.777-88",
+    nascimento: "01/01/1994",
+    sexo: "Feminino",
+    telefone: "(41) 97654-3210",
+    email: "patricia.mendes@example.com",
+    endereco: "Rua das Acácias, 10 - Curitiba/PR",
+    funcao: "Recepcionista",
+    unidade: "Recepção Pediatria",
+    horario: "Manhã",
+    supervisor: "Andréa Souza",
+    dataAdmissao: "2023-05-12",
+    status: "Ativo"
+  },
+  {
+    nome: "Diego Fernandes",
+    cpf: "333.222.111-00",
+    nascimento: "25/10/1987",
+    sexo: "Masculino",
+    telefone: "(85) 99988-7766",
+    email: "diego.fernandes@example.com",
+    endereco: "Rua João Pessoa, 77 - Fortaleza/CE",
+    funcao: "Recepcionista",
+    unidade: "Recepção Exames",
+    horario: "Tarde",
+    supervisor: "Camila Dias",
+    dataAdmissao: "2019-04-20",
+    status: "Ativo"
+  }
+];
 
 export const navItems = [
   {
