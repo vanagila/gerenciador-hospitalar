@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt br">
 
 <head>
@@ -91,3 +91,131 @@
 
 </form>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <title>Cadastro Paciente</title>
+</head>
+<body>
+    <main class="main-cadastro">
+        <section class="header-section">
+            <img src="/assets/img/gerenciador.png" alt="logo">
+            <h2>Dados Pessoais</h2>
+        </section>
+        <section class="form-section">
+            <form class="cadastro-form" data-tipo="paciente">
+                <div>
+                    <div class="input-box">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="dtNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dtNascimento" name="dtNascimento" required placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="genero">Gênero:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="">Selecione</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite aqui...">
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-box">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="convenio">Convênio:</label>
+                        <input type="text" id="convenio" name="convenio" required placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="numeroPlano">Número da Carteira do Plano de Saúde:</label>
+                        <input type="text" id="numeroPlano" name="numeroPlano" placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="tipoSanguineo">Tipo Sanguíneo:</label>
+                        <input type="text" id="tipoSanguineo" name="tipoSanguineo" placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="doencas">Doenças pré-existentes:</label>
+                        <input type="text" id="doencas" name="doencas" placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="alergiasPre">Alergias:</label>
+                        <input type="text" id="alergiasPre" name="alergiasPre" placeholder="Digite aqui...">
+                    </div>
+                    <div class="input-box">
+                        <label for="usoMedicamentos">Uso contínuo de medicamentos:</label>
+                        <input type="text" id="usoMedicamentos" name="usoMedicamentos" placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input-box">
+                        <label for="obs">Observações:</label>
+                        <textarea id="obs" name="obs" rows="4" cols="40" placeholder="Digite aqui..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit">CADASTRAR</button>
+            </form>
+        </section>
+    </main>
+    
+    <script type="module" src="../../script/cadastros.js"></script>
+</body>
+</html>
