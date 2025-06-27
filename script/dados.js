@@ -79,7 +79,7 @@ export const tituloConsultas = [
   }
 ]
 
-const medicos = [
+export const medicos = [
   {
     nome: "Dra. Mariana Ferreira",
     cpf: "123.456.789-00",
@@ -92,8 +92,6 @@ const medicos = [
     especialidade: "Cardiologia",
     setor: "Ambulatório",
     turno: "Manhã",
-    dataAdmissao: "2015-04-10",
-    status: "Ativo"
   },
   {
     nome: "Dr. Ricardo Almeida",
@@ -107,8 +105,6 @@ const medicos = [
     especialidade: "Ortopedia",
     setor: "Centro Cirúrgico",
     turno: "Tarde",
-    dataAdmissao: "2012-08-01",
-    status: "Ativo"
   },
   {
     nome: "Dra. Beatriz Nunes",
@@ -122,8 +118,6 @@ const medicos = [
     especialidade: "Pediatria",
     setor: "Pediatria",
     turno: "Manhã",
-    dataAdmissao: "2019-02-14",
-    status: "Ativo"
   },
   {
     nome: "Dr. João Batista",
@@ -137,8 +131,6 @@ const medicos = [
     especialidade: "Neurologia",
     setor: "Internação",
     turno: "Noite",
-    dataAdmissao: "2010-10-10",
-    status: "Ativo"
   },
   {
     nome: "Dra. Camila Rocha",
@@ -152,8 +144,6 @@ const medicos = [
     especialidade: "Dermatologia",
     setor: "Ambulatório",
     turno: "Tarde",
-    dataAdmissao: "2021-07-05",
-    status: "Ativo"
   }
 ];
 
@@ -165,7 +155,7 @@ export const tituloMedicos = [
   }
 ];
 
-const enfermeiros = [
+export const enfermeiros = [
   {
     nome: "Patrícia Gomes",
     cpf: "111.222.333-44",
@@ -173,13 +163,13 @@ const enfermeiros = [
     sexo: "Feminino",
     telefone: "(11) 91234-5678",
     email: "patricia.gomes@example.com",
-    endereco: "Rua Santo André, 45 - São Paulo/SP",
-    funcao: "Enfermeira",
+    endereco: "Rua Santo André, 45",
+    bairro: "Bela Vista",
+    cidade: "São Paulo",
+    estado: "SP",
     coren: "COREN-SP-123456",
-    turno: "Manhã",
     setor: "UTI",
-    dataAdmissao: "2017-03-10",
-    status: "Ativo"
+    turno: "Manhã",
   },
   {
     nome: "Bruno Moreira",
@@ -188,13 +178,13 @@ const enfermeiros = [
     sexo: "Masculino",
     telefone: "(21) 99876-5432",
     email: "bruno.moreira@example.com",
-    endereco: "Av. Presidente Vargas, 200 - Rio de Janeiro/RJ",
-    funcao: "Enfermeiro",
+    endereco: "Av. Presidente Vargas, 200",
+    bairro: "Centro",
+    cidade: "Rio de Janeiro",
+    estado: "RJ",
     coren: "COREN-RJ-654321",
-    turno: "Tarde",
     setor: "Centro Cirúrgico",
-    dataAdmissao: "2012-06-01",
-    status: "Ativo"
+    turno: "Tarde",
   },
   {
     nome: "Juliana Pires",
@@ -203,13 +193,13 @@ const enfermeiros = [
     sexo: "Feminino",
     telefone: "(31) 93456-7890",
     email: "juliana.pires@example.com",
-    endereco: "Av. dos Andradas, 150 - Belo Horizonte/MG",
-    funcao: "Enfermeira",
+    endereco: "Av. dos Andradas, 150",
+    bairro: "Santa Efigênia",
+    cidade: "Belo Horizonte",
+    estado: "MG",
     coren: "COREN-MG-998877",
-    turno: "Noite",
     setor: "Internação",
-    dataAdmissao: "2019-11-12",
-    status: "Ativo"
+    turno: "Noite",
   },
   {
     nome: "Carlos Nunes",
@@ -218,30 +208,31 @@ const enfermeiros = [
     sexo: "Masculino",
     telefone: "(41) 98877-6655",
     email: "carlos.nunes@example.com",
-    endereco: "Rua Marechal Deodoro, 123 - Curitiba/PR",
-    funcao: "Enfermeiro",
+    endereco: "Rua Marechal Deodoro, 123",
+    bairro: "Alto da Glória",
+    cidade: "Curitiba",
+    estado: "PR",
     coren: "COREN-PR-445566",
-    turno: "Manhã",
     setor: "Emergência",
-    dataAdmissao: "2010-08-20",
-    status: "Ativo"
+    turno: "Manhã",
   },
   {
     nome: "Tainá Rocha",
     cpf: "555.666.777-88",
     nascimento: "20/11/1992",
-    sexo: "Feminino",
+    sexo: "Outro",
     telefone: "(71) 99999-8888",
     email: "taina.rocha@example.com",
-    endereco: "Rua das Palmeiras, 70 - Salvador/BA",
-    funcao: "Enfermeira",
+    endereco: "Rua das Palmeiras, 70",
+    bairro: "Pituba",
+    cidade: "Salvador",
+    estado: "BA",
     coren: "COREN-BA-223344",
-    turno: "Tarde",
     setor: "Pediatria",
-    dataAdmissao: "2021-05-15",
-    status: "Ativo"
+    turno: "Tarde",
   }
 ];
+
 
 export const tituloEnfermeiros = [ 
   {
@@ -265,8 +256,6 @@ export const tecnicosEnfermagem = [
     turno: "Noite",
     setor: "UTI",
     supervisor: "Enf. Patrícia Gomes",
-    dataAdmissao: "2021-03-15",
-    status: "Ativo"
   },
   {
     nome: "João Pereira",
@@ -281,8 +270,6 @@ export const tecnicosEnfermagem = [
     turno: "Manhã",
     setor: "Emergência",
     supervisor: "Enf. Carlos Nunes",
-    dataAdmissao: "2019-11-01",
-    status: "Ativo"
   },
   {
     nome: "Luciana Martins",
@@ -297,8 +284,6 @@ export const tecnicosEnfermagem = [
     turno: "Tarde",
     setor: "Internação",
     supervisor: "Enf. Juliana Pires",
-    dataAdmissao: "2020-08-10",
-    status: "Ativo"
   },
   {
     nome: "Ricardo Lima",
@@ -313,8 +298,6 @@ export const tecnicosEnfermagem = [
     turno: "Noite",
     setor: "Centro Cirúrgico",
     supervisor: "Enf. Bruno Moreira",
-    dataAdmissao: "2018-05-22",
-    status: "Ativo"
   },
   {
     nome: "Fernanda Alves",
@@ -329,8 +312,6 @@ export const tecnicosEnfermagem = [
     turno: "Manhã",
     setor: "Pediatria",
     supervisor: "Enf. Tainá Rocha",
-    dataAdmissao: "2022-01-10",
-    status: "Ativo"
   }
 ];
   
@@ -342,7 +323,7 @@ export const tituloTecEnfs = [
   }
 ];
 
-const pacientes = [
+export const pacientes = [
   {
     nome: "Laura Martins",
     cpf: "123.456.789-00",
@@ -350,9 +331,12 @@ const pacientes = [
     sexo: "Feminino",
     telefone: "(11) 91234-5678",
     email: "laura.martins@example.com",
-    endereco: "Rua São João, 123 - São Paulo/SP",
+    endereco: "Rua São João, 123",
+    bairro: "Centro",
+    cidade: "São Paulo",
+    estado: "SP",
     convenio: "Unimed",
-    numeroCarteira: "UM12345678",
+    numeroCarteira: "UM12345678"
   },
   {
     nome: "Felipe Souza",
@@ -361,9 +345,12 @@ const pacientes = [
     sexo: "Masculino",
     telefone: "(21) 99876-5432",
     email: "felipe.souza@example.com",
-    endereco: "Av. Atlântica, 99 - Rio de Janeiro/RJ",
+    endereco: "Av. Atlântica, 99",
+    bairro: "Copacabana",
+    cidade: "Rio de Janeiro",
+    estado: "RJ",
     convenio: "Bradesco Saúde",
-    numeroCarteira: "BR99887766",
+    numeroCarteira: "BR99887766"
   },
   {
     nome: "Ana Paula Lima",
@@ -372,9 +359,12 @@ const pacientes = [
     sexo: "Feminino",
     telefone: "(31) 93456-7890",
     email: "ana.lima@example.com",
-    endereco: "Rua das Acácias, 45 - Belo Horizonte/MG",
+    endereco: "Rua das Acácias, 45",
+    bairro: "Savassi",
+    cidade: "Belo Horizonte",
+    estado: "MG",
     convenio: "Amil",
-    numeroCarteira: "AM55443322",
+    numeroCarteira: "AM55443322"
   },
   {
     nome: "Carlos Eduardo Braga",
@@ -383,9 +373,12 @@ const pacientes = [
     sexo: "Masculino",
     telefone: "(85) 98888-7777",
     email: "carlos.braga@example.com",
-    endereco: "Rua das Flores, 88 - Fortaleza/CE",
+    endereco: "Rua das Flores, 88",
+    bairro: "Aldeota",
+    cidade: "Fortaleza",
+    estado: "CE",
     convenio: "Particular",
-    numeroCarteira: null,
+    numeroCarteira: null
   },
   {
     nome: "Mariana Azevedo",
@@ -394,9 +387,12 @@ const pacientes = [
     sexo: "Feminino",
     telefone: "(41) 97777-6666",
     email: "mariana.az@example.com",
-    endereco: "Av. Curitiba, 100 - Curitiba/PR",
+    endereco: "Av. Curitiba, 100",
+    bairro: "Batel",
+    cidade: "Curitiba",
+    estado: "PR",
     convenio: "SulAmérica",
-    numeroCarteira: "SA10293847",
+    numeroCarteira: "SA10293847"
   },
   {
     nome: "José Ricardo Alves",
@@ -405,21 +401,26 @@ const pacientes = [
     sexo: "Masculino",
     telefone: "(51) 97654-3210",
     email: "jose.alves@example.com",
-    endereco: "Rua Porto Alegre, 15 - Porto Alegre/RS",
+    endereco: "Rua Porto Alegre, 15",
+    bairro: "Centro Histórico",
+    cidade: "Porto Alegre",
+    estado: "RS",
     convenio: "Unimed",
-    numeroCarteira: "UM55667788",
-    status: "Inativo"
+    numeroCarteira: "UM55667788"
   },
   {
     nome: "Juliana Torres",
     cpf: "555.666.777-88",
     nascimento: "05/05/1999",
-    sexo: "Feminino",
+    sexo: "Outro",
     telefone: "(71) 99999-8888",
     email: "juliana.torres@example.com",
-    endereco: "Rua da Bahia, 70 - Salvador/BA",
+    endereco: "Rua da Bahia, 70",
+    bairro: "Campo Grande",
+    cidade: "Salvador",
+    estado: "BA",
     convenio: "Hapvida",
-    numeroCarteira: "HP12344321",
+    numeroCarteira: "HP12344321"
   },
   {
     nome: "Vinícius Andrade",
@@ -428,9 +429,12 @@ const pacientes = [
     sexo: "Masculino",
     telefone: "(62) 91111-2222",
     email: "vinicius.andrade@example.com",
-    endereco: "Rua Goiás, 34 - Goiânia/GO",
+    endereco: "Rua Goiás, 34",
+    bairro: "Setor Central",
+    cidade: "Goiânia",
+    estado: "GO",
     convenio: "Particular",
-    numeroCarteira: null,
+    numeroCarteira: null
   },
   {
     nome: "Renata Nogueira",
@@ -439,21 +443,26 @@ const pacientes = [
     sexo: "Feminino",
     telefone: "(95) 94444-3333",
     email: "renata.nogueira@example.com",
-    endereco: "Rua das Palmeiras, 17 - Boa Vista/RR",
+    endereco: "Rua das Palmeiras, 17",
+    bairro: "Mecejana",
+    cidade: "Boa Vista",
+    estado: "RR",
     convenio: "Bradesco Saúde",
-    numeroCarteira: "BR77332211",
+    numeroCarteira: "BR77332211"
   },
   {
     nome: "André Luiz Silva",
     cpf: "888.999.000-11",
     nascimento: "22/07/1978",
-    sexo: "Masculino",
+    sexo: "Outro",
     telefone: "(98) 98888-7777",
     email: "andre.silva@example.com",
-    endereco: "Rua Maranhão, 123 - São Luís/MA",
+    endereco: "Rua Maranhão, 123",
+    bairro: "Cohama",
+    cidade: "São Luís",
+    estado: "MA",
     convenio: "Amil",
-    numeroCarteira: "AM11992233",
-    status: "Inativo"
+    numeroCarteira: "AM11992233"
   }
 ];
 
@@ -474,13 +483,12 @@ export const recepcionistas = [
     sexo: "Masculino",
     telefone: "(11) 99876-5432",
     email: "carlos@example.com",
-    endereco: "Av. Brasil, 45 - São Paulo/SP",
-    funcao: "Recepcionista",
+    endereco: "Rua Santo André, 45",
+    bairro: "Bela Vista",
+    cidade: "São Paulo",
+    estado: "SP",
     unidade: "Recepção Central",
     horario: "Manhã",
-    supervisor: "Ana Paula (Administração)",
-    dataAdmissao: "2020-07-01",
-    status: "Ativo"
   },
   {
     nome: "Juliana Costa",
@@ -489,13 +497,12 @@ export const recepcionistas = [
     sexo: "Feminino",
     telefone: "(21) 91234-5678",
     email: "juliana.costa@example.com",
-    endereco: "Rua das Laranjeiras, 88 - Rio de Janeiro/RJ",
-    funcao: "Recepcionista",
+    endereco: "Av. Presidente Vargas, 200",
+    bairro: "Centro",
+    cidade: "Rio de Janeiro",
+    estado: "RJ",
     unidade: "Clínica Geral",
     horario: "Tarde",
-    supervisor: "Felipe Andrade",
-    dataAdmissao: "2021-02-18",
-    status: "Ativo"
   },
   {
     nome: "Marcos Oliveira",
@@ -504,13 +511,12 @@ export const recepcionistas = [
     sexo: "Masculino",
     telefone: "(31) 99876-1234",
     email: "marcos.oliveira@example.com",
-    endereco: "Av. Amazonas, 120 - Belo Horizonte/MG",
-    funcao: "Recepcionista",
+    endereco: "Av. dos Andradas, 150",
+    bairro: "Santa Efigênia",
+    cidade: "Belo Horizonte",
+    estado: "MG",
     unidade: "Urgência e Emergência",
     horario: "Noite",
-    supervisor: "Enf. Carla Lima",
-    dataAdmissao: "2017-09-10",
-    status: "Ativo"
   },
   {
     nome: "Patrícia Mendes",
@@ -519,13 +525,12 @@ export const recepcionistas = [
     sexo: "Feminino",
     telefone: "(41) 97654-3210",
     email: "patricia.mendes@example.com",
-    endereco: "Rua das Acácias, 10 - Curitiba/PR",
-    funcao: "Recepcionista",
+    endereco: "Rua Marechal Deodoro, 123",
+    bairro: "Alto da Glória",
+    cidade: "Curitiba",
+    estado: "PR",
     unidade: "Recepção Pediatria",
     horario: "Manhã",
-    supervisor: "Andréa Souza",
-    dataAdmissao: "2023-05-12",
-    status: "Ativo"
   },
   {
     nome: "Diego Fernandes",
@@ -534,13 +539,12 @@ export const recepcionistas = [
     sexo: "Masculino",
     telefone: "(85) 99988-7766",
     email: "diego.fernandes@example.com",
-    endereco: "Rua João Pessoa, 77 - Fortaleza/CE",
-    funcao: "Recepcionista",
+    endereco: "Rua das Palmeiras, 70",
+    bairro: "Pituba",
+    cidade: "Salvador",
+    estado: "BA",
     unidade: "Recepção Exames",
     horario: "Tarde",
-    supervisor: "Camila Dias",
-    dataAdmissao: "2019-04-20",
-    status: "Ativo"
   }
 ];
 
