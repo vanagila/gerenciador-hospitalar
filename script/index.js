@@ -43,14 +43,14 @@ function renderPacientes() {{
             const nome = document.createElement("span");
             const cpf = document.createElement("span");
             const dataNasc = document.createElement("span");
-            const sexo = document.createElement("button");
+            const sexo = document.createElement("span");
             const btnEditar = document.createElement("button");
             const btnDeletar = document.createElement("button");
             const divAcoes = document.createElement("div");
         
             nome.textContent = `${paciente.nome}`;
             cpf.textContent = `${paciente.cpf}`
-            dataNasc.textContent = `${paciente.dataNascimento}`
+            dataNasc.textContent = `${paciente.nascimento}`
             sexo.textContent = `${paciente.sexo}`
             
             btnEditar.classList.add("btn-editar");
