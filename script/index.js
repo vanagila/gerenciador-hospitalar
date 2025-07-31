@@ -32,7 +32,7 @@ function renderList(renderFn) {
     }, 400)
 }
 
-function renderPacients() {{
+function renderPacientes() {{
     renderHeader(tituloPacientes[0])
     renderList(() => {
         listagemTitle.textContent = "Pacientes";
@@ -70,7 +70,7 @@ function renderPacients() {{
     })
 }}
 
-function renderDoctors() {
+function renderMedicos() {
     renderHeader(tituloMedicos[0])
     renderList(() => {
         listagemTitle.textContent = "Médicos";
@@ -106,7 +106,7 @@ function renderDoctors() {
     })
 }
 
-function renderAppointments() {
+function renderConsultas() {
     renderHeader(tituloConsultas[0])
     renderList(() => {
         listagemTitle.textContent = "Consultas";
@@ -142,7 +142,7 @@ function renderAppointments() {
     })
 }
 
-function renderNurses() {
+function renderEnfermeiros() {
     renderHeader(tituloEnfermeiros[0])
     renderList(() => {
         listagemTitle.textContent = "Enfermeiros";
@@ -178,7 +178,7 @@ function renderNurses() {
     })
 }
 
-function renderNursingTech() {
+function renderTecEnfermeiros() {
     renderHeader(tituloTecEnfs[0])
     renderList(() => {
         listagemTitle.textContent = "Téc. de Enfermagem";
@@ -245,19 +245,19 @@ function renderNav() {
 
         switch (item.id) {
             case "btn-pacientes":
-                li.addEventListener("click", renderPacients)
+                li.addEventListener("click", renderPacientes)
                 break;
             case "btn-doctors":
-                li.addEventListener("click", renderDoctors)
+                li.addEventListener("click", renderMedicos)
                 break;
             case "btn-consultas":
-                li.addEventListener("click", renderAppointments)
+                li.addEventListener("click", renderConsultas)
                 break;
             case "btn-enfermeiros":
-                li.addEventListener("click", renderNurses)
+                li.addEventListener("click", renderEnfermeiros)
                 break;
             case "btn-tecEnf":
-                li.addEventListener("click", renderNursingTech)
+                li.addEventListener("click", renderTecEnfermeiros)
                 break;
             case "btn-users":
                 break;
@@ -266,4 +266,4 @@ function renderNav() {
 }
 
 renderNav();
-renderPacients();
+renderPacientes();
