@@ -1,0 +1,200 @@
+body.bg {
+    background-color: var(--gray-bg);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.modal-paciente-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modal-paciente {
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-paciente-header {
+    background: linear-gradient(to right, #EFF6FF, #EEF2FF);
+    padding: 1rem;
+    border-bottom: 1px solid #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-paciente-header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.modal-paciente-header-left h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.modal-paciente-icon-circle {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.modal-paciente-close-button {
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #666;
+    transition: all 0.2s;
+    border: none;
+}
+
+.modal-paciente-close-button:hover {
+    color: #333;
+}
+
+.modal-paciente-body {
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.modal-paciente-basic-info {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.modal-paciente-basic-info h3 {
+    font-size: 1.2rem;
+    color: var(--primary-text);
+}
+
+.modal-paciente-tag-success {
+    background-color: #D1FAE5;
+    color: #065F46;
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.modal-paciente-info-sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-paciente-section {
+    border-top: 1px solid #E5E7EB;
+    padding-top: 1.5rem;
+}
+
+.modal-paciente-section h4 {
+    font-size: 1rem;
+    color: var(--primary-text);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-paciente-section p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+.modal-paciente-notes {
+    background: #F9FAFB;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid #E5E7EB;
+    color: #555;
+    font-size: 1rem;
+}
+
+.modal-paciente-footer {
+    align-items: center;
+    background-color: #F9FAFB;
+    padding: 1rem;
+    border-top: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-paciente-last-update {
+    font-size: 1rem;
+    color: #888;
+}
+
+.modal-paciente-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.modal-paciente-btn {
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: 0.2s;
+    border: none;
+}
+
+.modal-paciente-cancel {
+    background: transparent;
+    border: 1px solid #CCC;
+    color: #444;
+}
+
+.modal-paciente-cancel:hover {
+    background: #F0F0F0;
+}
+
+.modal-paciente-edit {
+    background-color: var(--primary-blue);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.modal-paciente-edit:hover {
+    background-color: #1d6edb;
+}
+
+.modal-paciente-text-sm {
+    font-size: 1rem;
+    color: #888;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
