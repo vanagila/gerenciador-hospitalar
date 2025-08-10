@@ -1,5 +1,6 @@
 export const consultas = [
   {
+    id: 1,
     dataConsulta: "01/06/2025",
     horarioConsulta: "08:30",
     nomePaciente: "Ana Silva",
@@ -7,6 +8,7 @@ export const consultas = [
     especialidade: "Cardiologia"
   },
   {
+    id: 2,
     dataConsulta: "02/06/2025",
     horarioConsulta: "09:15",
     nomePaciente: "Carlos Mendes",
@@ -14,6 +16,7 @@ export const consultas = [
     especialidade: "Dermatologia"
   },
   {
+    id: 3,
     dataConsulta: "03/06/2025",
     horarioConsulta: "10:00",
     nomePaciente: "Fernanda Oliveira",
@@ -21,6 +24,7 @@ export const consultas = [
     especialidade: "Ortopedia"
   },
   {
+    id: 4,
     dataConsulta: "04/06/2025",
     horarioConsulta: "11:30",
     nomePaciente: "Paulo Souza",
@@ -28,6 +32,7 @@ export const consultas = [
     especialidade: "Neurologia"
   },
   {
+    id: 5,
     dataConsulta: "05/06/2025",
     horarioConsulta: "14:00",
     nomePaciente: "Mariana Ferreira",
@@ -35,6 +40,7 @@ export const consultas = [
     especialidade: "Ginecologia"
   },
   {
+    id: 6,
     dataConsulta: "06/06/2025",
     horarioConsulta: "15:20",
     nomePaciente: "José Almeida",
@@ -42,6 +48,7 @@ export const consultas = [
     especialidade: "Oftalmologia"
   },
   {
+    id: 7,
     dataConsulta: "07/06/2025",
     horarioConsulta: "16:10",
     nomePaciente: "Beatriz Ramos",
@@ -49,6 +56,7 @@ export const consultas = [
     especialidade: "Pediatria"
   },
   {
+    id: 8,
     dataConsulta: "08/06/2025",
     horarioConsulta: "08:45",
     nomePaciente: "Ricardo Martins",
@@ -56,6 +64,7 @@ export const consultas = [
     especialidade: "Endocrinologia"
   },
   {
+    id: 9,
     dataConsulta: "09/06/2025",
     horarioConsulta: "10:30",
     nomePaciente: "Luciana Carvalho",
@@ -63,6 +72,7 @@ export const consultas = [
     especialidade: "Psiquiatria"
   },
   {
+    id: 10,
     dataConsulta: "10/06/2025",
     horarioConsulta: "13:00",
     nomePaciente: "Fernando Rocha",
@@ -73,6 +83,7 @@ export const consultas = [
 
 export const tituloConsultas = [ 
   {
+    id: 1,
     dataHora: "Data",
     nome: "Paciente",
     medico: "Médico"
@@ -81,6 +92,7 @@ export const tituloConsultas = [
 
 export const medicos = [
   {
+    id: 1,
     nome: "Dra. Mariana Ferreira",
     cpf: "123.456.789-00",
     nascimento: "15/03/1982",
@@ -94,6 +106,7 @@ export const medicos = [
     turno: "Manhã",
   },
   {
+    id: 2,
     nome: "Dr. Ricardo Almeida",
     cpf: "987.654.321-00",
     nascimento: "20/11/1975",
@@ -107,6 +120,7 @@ export const medicos = [
     turno: "Tarde",
   },
   {
+    id: 3,
     nome: "Dra. Beatriz Nunes",
     cpf: "111.222.333-44",
     nascimento: "01/07/1987",
@@ -120,6 +134,7 @@ export const medicos = [
     turno: "Manhã",
   },
   {
+    id: 4,
     nome: "Dr. João Batista",
     cpf: "222.333.444-55",
     nascimento: "10/01/1980",
@@ -133,6 +148,7 @@ export const medicos = [
     turno: "Noite",
   },
   {
+    id: 5,
     nome: "Dra. Camila Rocha",
     cpf: "333.444.555-66",
     nascimento: "22/09/1990",
@@ -157,6 +173,7 @@ export const tituloMedicos = [
 
 export const enfermeiros = [
   {
+    id: 1,
     nome: "Patrícia Gomes",
     cpf: "111.222.333-44",
     nascimento: "12/06/1985",
@@ -172,6 +189,7 @@ export const enfermeiros = [
     turno: "Manhã",
   },
   {
+    id: 2,
     nome: "Bruno Moreira",
     cpf: "222.333.444-55",
     nascimento: "30/08/1978",
@@ -187,6 +205,7 @@ export const enfermeiros = [
     turno: "Tarde",
   },
   {
+    id: 3,
     nome: "Juliana Pires",
     cpf: "333.444.555-66",
     nascimento: "01/03/1990",
@@ -202,6 +221,7 @@ export const enfermeiros = [
     turno: "Noite",
   },
   {
+    id: 4,
     nome: "Carlos Nunes",
     cpf: "444.555.666-77",
     nascimento: "05/04/1982",
@@ -217,6 +237,7 @@ export const enfermeiros = [
     turno: "Manhã",
   },
   {
+    id: 5,
     nome: "Tainá Rocha",
     cpf: "555.666.777-88",
     nascimento: "20/11/1992",
@@ -233,17 +254,17 @@ export const enfermeiros = [
   }
 ];
 
-
 export const tituloEnfermeiros = [ 
   {
     nome: "Nome",
     coren: "COREM",
     turno: "Turno"
   }
-]
+];
 
 export const tecnicosEnfermagem = [
   {
+    id: 1,
     nome: "Amanda Souza",
     cpf: "123.456.789-00",
     nascimento: "10/05/1992",
@@ -258,6 +279,7 @@ export const tecnicosEnfermagem = [
     supervisor: "Enf. Patrícia Gomes",
   },
   {
+    id: 2,
     nome: "João Pereira",
     cpf: "987.654.321-00",
     nascimento: "23/07/1989",
@@ -272,6 +294,7 @@ export const tecnicosEnfermagem = [
     supervisor: "Enf. Carlos Nunes",
   },
   {
+    id: 3,
     nome: "Luciana Martins",
     cpf: "111.222.333-44",
     nascimento: "05/12/1995",
@@ -286,6 +309,7 @@ export const tecnicosEnfermagem = [
     supervisor: "Enf. Juliana Pires",
   },
   {
+    id: 4,
     nome: "Ricardo Lima",
     cpf: "444.555.666-77",
     nascimento: "15/02/1985",
@@ -300,6 +324,7 @@ export const tecnicosEnfermagem = [
     supervisor: "Enf. Bruno Moreira",
   },
   {
+    id: 5,
     nome: "Fernanda Alves",
     cpf: "777.888.999-00",
     nascimento: "30/08/1990",
@@ -325,6 +350,7 @@ export const tituloTecEnfs = [
 
 export const pacientes = [
   {
+    id: 1,
     nome: "Laura Martins",
     cpf: "123.456.789-00",
     nascimento: "12/04/1990",
@@ -339,6 +365,7 @@ export const pacientes = [
     numeroCarteira: "UM12345678"
   },
   {
+    id: 2,
     nome: "Felipe Souza",
     cpf: "987.654.321-00",
     nascimento: "25/06/1985",
@@ -353,6 +380,7 @@ export const pacientes = [
     numeroCarteira: "BR99887766"
   },
   {
+    id: 3,
     nome: "Ana Paula Lima",
     cpf: "111.222.333-44",
     nascimento: "09/09/1975",
@@ -367,6 +395,7 @@ export const pacientes = [
     numeroCarteira: "AM55443322"
   },
   {
+    id: 4,
     nome: "Carlos Eduardo Braga",
     cpf: "222.333.444-55",
     nascimento: "03/03/1992",
@@ -381,6 +410,7 @@ export const pacientes = [
     numeroCarteira: null
   },
   {
+    id: 5,
     nome: "Mariana Azevedo",
     cpf: "333.444.555-66",
     nascimento: "17/11/1988",
@@ -395,6 +425,7 @@ export const pacientes = [
     numeroCarteira: "SA10293847"
   },
   {
+    id: 6,
     nome: "José Ricardo Alves",
     cpf: "444.555.666-77",
     nascimento: "20/08/1965",
@@ -409,6 +440,7 @@ export const pacientes = [
     numeroCarteira: "UM55667788"
   },
   {
+    id: 7,
     nome: "Juliana Torres",
     cpf: "555.666.777-88",
     nascimento: "05/05/1999",
@@ -423,6 +455,7 @@ export const pacientes = [
     numeroCarteira: "HP12344321"
   },
   {
+    id: 8,
     nome: "Vinícius Andrade",
     cpf: "666.777.888-99",
     nascimento: "30/12/1990",
@@ -437,6 +470,7 @@ export const pacientes = [
     numeroCarteira: null
   },
   {
+    id: 9,
     nome: "Renata Nogueira",
     cpf: "777.888.999-00",
     nascimento: "14/02/1983",
@@ -451,6 +485,7 @@ export const pacientes = [
     numeroCarteira: "BR77332211"
   },
   {
+    id: 10,
     nome: "André Luiz Silva",
     cpf: "888.999.000-11",
     nascimento: "22/07/1978",
@@ -477,6 +512,7 @@ export const tituloPacientes = [
 
 export const recepcionistas = [
   {
+    id: 1,
     nome: "Carlos Ramos",
     cpf: "987.654.321-00",
     nascimento: "02/11/1985",
@@ -491,6 +527,7 @@ export const recepcionistas = [
     horario: "Manhã",
   },
   {
+    id: 2,
     nome: "Juliana Costa",
     cpf: "321.654.987-00",
     nascimento: "14/03/1991",
@@ -505,6 +542,7 @@ export const recepcionistas = [
     horario: "Tarde",
   },
   {
+    id: 3,
     nome: "Marcos Oliveira",
     cpf: "654.123.789-11",
     nascimento: "09/06/1980",
@@ -519,6 +557,7 @@ export const recepcionistas = [
     horario: "Noite",
   },
   {
+    id: 4,
     nome: "Patrícia Mendes",
     cpf: "555.666.777-88",
     nascimento: "01/01/1994",
@@ -533,6 +572,7 @@ export const recepcionistas = [
     horario: "Manhã",
   },
   {
+    id: 5,
     nome: "Diego Fernandes",
     cpf: "333.222.111-00",
     nascimento: "25/10/1987",
@@ -587,7 +627,7 @@ export const navItems = [
     }
 ];
 
-export const permissionNav = {
+export const permissoesNav = {
     admin: ["btn-pacientes", "btn-doctors", "btn-consultas", "btn-enfermeiros", "btn-tecEnf", "btn-users"],
     doctor: ["btn-consultas", "btn-pacientes"],
     nurse: ["btn-consultas", "btn-pacientes"],
@@ -596,4 +636,4 @@ export const permissionNav = {
 
 export const userType = [
   "admin", "doctor", "nurse", "nursingTech"
-]
+];

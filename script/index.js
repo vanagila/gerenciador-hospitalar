@@ -1,10 +1,10 @@
-import { consultas, medicos, enfermeiros, tecnicosEnfermagem, pacientes, tituloPacientes, tituloConsultas, tituloMedicos, tituloEnfermeiros, tituloTecEnfs, navItems, permissionNav } from "./dados.js"; 
+import { consultas, medicos, enfermeiros, tecnicosEnfermagem, pacientes, tituloPacientes, tituloConsultas, tituloMedicos, tituloEnfermeiros, tituloTecEnfs, navItems, permissoesNav } from "./dados.js"; 
 
 const nav = document.querySelector(".main-nav-list");
 const lista = document.querySelector(".listagem-list");
 const listagemTitle = document.querySelector(".listagem-title");
 
-function renderHeader(titulos) {
+const renderHeader = (titulos) => {
     const header = document.querySelector(".listagem-header");
     header.innerHTML = "";
     
@@ -19,7 +19,7 @@ function renderHeader(titulos) {
     header.appendChild(liAcoes);
 }
 
-function renderList(renderFn) {
+const renderList = (renderFn) => {
     lista.classList.add("fade-out");
     setTimeout(() => {
         lista.innerHTML = "";
@@ -32,11 +32,11 @@ function renderList(renderFn) {
     }, 400)
 }
 
-function renderPacientes() {{
+const renderPacientes = () => {{
     renderHeader(tituloPacientes[0])
     renderList(() => {
         listagemTitle.textContent = "Pacientes";
-        pacientes.forEach(paciente => {
+        pacientes.forEach((paciente, index) => {
             const li = document.createElement("li");
             li.classList.add("listagem-list-item")
         
@@ -45,7 +45,6 @@ function renderPacientes() {{
             const dataNasc = document.createElement("span");
             const sexo = document.createElement("span");
             const btnEditar = document.createElement("button");
-            const btnDeletar = document.createElement("button");
             const divAcoes = document.createElement("div");
         
             nome.textContent = `${paciente.nome}`;
@@ -54,13 +53,20 @@ function renderPacientes() {{
             sexo.textContent = `${paciente.sexo}`
             
             btnEditar.classList.add("btn-editar");
-            btnEditar.innerHTML = `<i class="fa-solid fa-pencil"></i>`;
-        
-            btnDeletar.classList.add("btn-cancelar");
-            btnDeletar.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+            btnEditar.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+            btnEditar.setAttribute("data-index", index);
+
+            btnEditar.addEventListener("click", (e) => {
+                e.stopPropagation();
+                mostrarModalPaciente(pacientes[index]);
+                const modal = document.getElementById("modal-overlay");
+                if (modal) {
+                    modal.style.display = "flex";
+                }
+            });
         
             divAcoes.classList.add("acoes");
-            divAcoes.append(btnEditar, btnDeletar);
+            divAcoes.append(btnEditar);
         
             li.append(nome, cpf, dataNasc, sexo, divAcoes)
         
@@ -70,7 +76,7 @@ function renderPacientes() {{
     })
 }}
 
-function renderMedicos() {
+const renderMedicos = () => {
     renderHeader(tituloMedicos[0])
     renderList(() => {
         listagemTitle.textContent = "Médicos";
@@ -82,21 +88,17 @@ function renderMedicos() {
             const especialidade = document.createElement("span");
             const crm = document.createElement("span");
             const btnEditar = document.createElement("button");
-            const btnDeletar = document.createElement("button");
             const divAcoes = document.createElement("div");
         
-            nomeMedico.textContent = `${medico.nomeMedico}`;
+            nomeMedico.textContent = `${medico.nome}`;
             especialidade.textContent = `${medico.especialidade}`
             crm.textContent = `${medico.crm}`
             
             btnEditar.classList.add("btn-editar");
-            btnEditar.innerHTML = `<i class="fa-solid fa-pencil"></i>`;
-        
-            btnDeletar.classList.add("btn-cancelar");
-            btnDeletar.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+            btnEditar.innerHTML = `<i class="fa-solid fa-plus"></i>`;
         
             divAcoes.classList.add("acoes");
-            divAcoes.append(btnEditar, btnDeletar);
+            divAcoes.append(btnEditar);
         
             li.append(nomeMedico, especialidade, crm, divAcoes)
         
@@ -106,7 +108,7 @@ function renderMedicos() {
     })
 }
 
-function renderConsultas() {
+const renderConsultas = () => {
     renderHeader(tituloConsultas[0])
     renderList(() => {
         listagemTitle.textContent = "Consultas";
@@ -118,7 +120,6 @@ function renderConsultas() {
             const nomePaciente = document.createElement("span");
             const nomeMedico = document.createElement("span");
             const btnEditar = document.createElement("button");
-            const btnCancelar = document.createElement("button");
             const divAcoes = document.createElement("div");
         
             dataHorario.innerHTML = `${consulta.dataConsulta}<br>${consulta.horarioConsulta}`;
@@ -126,13 +127,10 @@ function renderConsultas() {
             nomeMedico.innerHTML = `${consulta.nomeMedico}<br>${consulta.especialidade}`;
         
             btnEditar.classList.add("btn-editar");
-            btnEditar.innerHTML = `<i class="fa-solid fa-pencil"></i>`;
-        
-            btnCancelar.classList.add("btn-cancelar");
-            btnCancelar.innerHTML = `<i class="fa-solid fa-trash"></i>`;
-        
+            btnEditar.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+    
             divAcoes.classList.add("acoes");
-            divAcoes.append(btnEditar, btnCancelar);
+            divAcoes.append(btnEditar);
         
             li.append(dataHorario, nomePaciente, nomeMedico, divAcoes)
         
@@ -142,7 +140,7 @@ function renderConsultas() {
     })
 }
 
-function renderEnfermeiros() {
+const renderEnfermeiros = () => {
     renderHeader(tituloEnfermeiros[0])
     renderList(() => {
         listagemTitle.textContent = "Enfermeiros";
@@ -154,7 +152,6 @@ function renderEnfermeiros() {
             const coren = document.createElement("span");
             const turno = document.createElement("span");
             const btnEditar = document.createElement("button");
-            const btnDeletar = document.createElement("button");
             const divAcoes = document.createElement("div");
             
             nomeEnfermeiro.textContent = `${enfermeiro.nome}`;
@@ -162,13 +159,10 @@ function renderEnfermeiros() {
             turno.textContent = `${enfermeiro.turno}`
                 
             btnEditar.classList.add("btn-editar");
-            btnEditar.innerHTML = `<i class="fa-solid fa-pencil"></i>`;
-            
-            btnDeletar.classList.add("btn-cancelar");
-            btnDeletar.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+            btnEditar.innerHTML = `<i class="fa-solid fa-plus"></i>`;
             
             divAcoes.classList.add("acoes");
-            divAcoes.append(btnEditar, btnDeletar);
+            divAcoes.append(btnEditar);
             
             li.append(nomeEnfermeiro, coren, turno, divAcoes)
             
@@ -178,7 +172,7 @@ function renderEnfermeiros() {
     })
 }
 
-function renderTecEnfermeiros() {
+const renderTecEnfermeiros = () => {
     renderHeader(tituloTecEnfs[0])
     renderList(() => {
         listagemTitle.textContent = "Téc. de Enfermagem";
@@ -190,7 +184,6 @@ function renderTecEnfermeiros() {
             const coren = document.createElement("coren");
             const turno = document.createElement("turno");
             const btnEditar = document.createElement("button");
-            const btnDeletar = document.createElement("button");
             const divAcoes = document.createElement("div");
                 
             nome.textContent = `${tecEnf.nome}`;
@@ -198,13 +191,10 @@ function renderTecEnfermeiros() {
             turno.textContent = `${tecEnf.turno}`
                     
             btnEditar.classList.add("btn-editar");
-            btnEditar.innerHTML = `<i class="fa-solid fa-pencil"></i>`;
-                
-            btnDeletar.classList.add("btn-cancelar");
-            btnDeletar.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+            btnEditar.innerHTML = `<i class="fa-solid fa-plus"></i>`;
                 
             divAcoes.classList.add("acoes");
-            divAcoes.append(btnEditar, btnDeletar);
+            divAcoes.append(btnEditar);
                 
             li.append(nome, coren, turno, divAcoes)
                 
@@ -216,11 +206,11 @@ function renderTecEnfermeiros() {
 
 const userType = "admin";
 
-function renderNav() {
+const renderNav = () => {
     nav.innerHTML = "";
 
-    const permittedItems = navItems.filter(item => permissionNav[userType].includes(item.id));
-    permittedItems.forEach(item => {
+    const itensPermitidos = navItems.filter(item => permissoesNav[userType].includes(item.id));
+    itensPermitidos.forEach(item => {
         const li = document.createElement("li");
         li.classList.add("main-nav-item");
 
@@ -263,6 +253,20 @@ function renderNav() {
                 break;
         }
     });
+}
+
+const mostrarModalPaciente = (paciente) => {
+    document.querySelector("#patient-modal h3").textContent = paciente.nome;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(1) p:nth-child(2)").innerHTML = `<strong>Nome Completo:</strong> ${paciente.nome}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(1) p:nth-child(3)").innerHTML = `<strong>CPF:</strong> ${paciente.cpf}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(1) p:nth-child(4)").innerHTML = `<strong>Data de Nascimento:</strong> ${paciente.nascimento}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(1) p:nth-child(5)").innerHTML = `<strong>Gênero:</strong> ${paciente.sexo}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(2) p:nth-child(2)").innerHTML = `<strong>Telefone:</strong> ${paciente.telefone || ""}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(2) p:nth-child(3)").innerHTML = `<strong>Email:</strong> ${paciente.email || ""}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(3) p:nth-child(2)").innerHTML = `<strong>Rua:</strong> ${paciente.rua || ""}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(3) p:nth-child(3)").innerHTML = `<strong>Cidade:</strong> ${paciente.cidade || ""}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(3) p:nth-child(4)").innerHTML = `<strong>Estado:</strong> ${paciente.estado || ""}`;
+    document.querySelector("#patient-modal .modal-paciente-section:nth-child(4) .modal-paciente-notes").textContent = paciente.observacoes || "";
 }
 
 renderNav();

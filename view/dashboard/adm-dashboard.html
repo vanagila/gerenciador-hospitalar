@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/adm-dashboard.css">
+    <link rel="stylesheet" href="/css/modal-pacientes.css">
     <title>Painel do Administrador</title>
 </head>
 <body>
@@ -43,6 +44,82 @@
         </section>
     </main>
 
+    <div class="modal-paciente-overlay" id="modal-overlay" style="display:none">
+        <div class="modal-paciente" id="patient-modal">
+            <div class="modal-paciente-header">
+                <div class="modal-paciente-header-left">
+                    <div class="modal-paciente-icon-circle">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <h2>Informações do Paciente</h2>
+                        <p class="modal-paciente-text-sm">Perfil detalhado do paciente</p>
+                    </div>
+                </div>
+                <button class="modal-paciente-close-button" id="close-modal">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+
+            <div class="modal-paciente-body">
+                <div class="modal-paciente-basic-info">
+                    <div>
+                        <h3>Maria Silva Santos</h3>
+                    </div>
+                </div>
+
+                <div class="modal-paciente-info-sections">
+                    <div class="modal-paciente-section">
+                        <h4><i class="fa-solid fa-id-card"></i>Informações Pessoais</h4>
+                        <p><strong>Nome Completo:</strong> Maria Silva Santos</p>
+                        <p><strong>CPF:</strong> 123.456.789-00</p>
+                        <p><strong>Data de Nascimento:</strong> 15/03/1985</p>
+                        <p><strong>Gênero:</strong> Feminino</p>
+                    </div>
+
+                    <div class="modal-paciente-section">
+                        <h4><i class="fa-solid fa-phone"></i>Contato</h4>
+                        <p><strong>Telefone:</strong> +55 (11) 99999-8888</p>
+                        <p><strong>Email:</strong> maria.santos@email.com</p>
+                    </div>
+
+                    <div class="modal-paciente-section">
+                        <h4><i class="fa-solid fa-map-marker-alt"></i>Endereço</h4>
+                        <p><strong>Rua:</strong> Rua das Flores, 123</p>
+                        <p><strong>Cidade:</strong> São Paulo</p>
+                        <p><strong>Estado:</strong> SP</p>
+                    </div>
+
+                    <div class="modal-paciente-section">
+                        <h4><i class="fa-solid fa-clipboard-list"></i>Observações</h4>
+                        <div class="modal-paciente-notes">
+                            Paciente com histórico de hipertensão e diabetes. Recomenda-se check-ups regulares a cada 3 meses.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-paciente-footer">
+                <span class="modal-paciente-last-update">Última atualização: 15 de dezembro de 2024</span>
+                <div class="modal-paciente-actions">
+                    <button class="modal-paciente-btn modal-paciente-cancel" id="cancel-button">Cancelar</button>
+                    <button class="modal-paciente-btn modal-paciente-edit" id="edit-button"><i class="fa-solid fa-edit"></i>Editar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnClose = document.getElementById('close-modal');
+            const modal = document.getElementById('modal-overlay');
+            if (btnClose && modal) {
+                btnClose.onclick = () => {
+                    modal.style.display = 'none';
+                };
+            }
+        });
+    </script>
     <script type="module" src="../../script/index.js"></script>
 </body>
 </html>

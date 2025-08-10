@@ -21,33 +21,33 @@
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1.7rem;
-  color: var(--primary-text);
-  font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+    color: var(--primary-text);
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  height: 45px;
-  padding: 1rem;
-  margin-bottom: 27px;
-  box-sizing: border-box;
-  border: 1px solid var(--input-border);
-  border-radius: 2px;
-  font-size: 1.4rem;
+    width: 100%;
+    height: 45px;
+    padding: 1rem;
+    margin-bottom: 27px;
+    box-sizing: border-box;
+    border: 1px solid var(--input-border);
+    border-radius: 2px;
+    font-size: 1.4rem;
 }
 
 button {
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--primary-blue);
-  color: var(--secondary-text);
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    color: var(--secondary-text);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
